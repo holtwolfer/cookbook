@@ -92,3 +92,5 @@
 
 ## Uploading to GitHub
 Extract the ZIP. Open the inner `holt-wolfer-cookbook-appetizers` folder. Upload its contents to the root of your existing `recipe-schema-test` GitHub repository, preserving the `recipes/` and `assets/` folders. GitHub should show the new appetizer HTML files under `recipes/` and images under `assets/`. Commit and wait for GitHub Pages to deploy.
+## Tags and Served with update
+Original OneNote tags and serving suggestions have been added to their main recipe pages when present. Linked serving suggestions use exact title matches or explicit aliases (e.g., bean dip → Costa Rican Black Bean Dip). Review these links; no missing recipe was fabricated. Child recipes split from a main OneNote page do not automatically inherit the parent tags. Search synonyms are illustrative and can be expanded.
