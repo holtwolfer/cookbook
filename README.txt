@@ -1,5 +1,5 @@
-UPDATED COOKBOOK: Includes two recipes and four original OneNote photos.
+Holt-Wolfer Cookbook — Appetizers pilot import
 
-Upload index.html, styles.css, recipes/ and assets/ to the root of your existing GitHub repository, preserving folders. Commit changes to main.
-
-Note: OneNote date is not treated as publication date. Cooking times and servings are not inferred.
+Includes existing 2 recipe pages plus appetizer pages, 5 source photos, review report.
+Review all new pages before relying on recipe instructions or structured data.
+Upload contents of this folder (not the outer ZIP) to GitHub repository root, keeping directories.
