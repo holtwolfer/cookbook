@@ -1,1 +1,5 @@
-Upload index.html and styles.css to the root of your existing GitHub Pages repository. Upload recipes/pork-chops-maple-glaze.html preserving the recipes folder. Commit changes. Then visit https://holtwolfer.github.io/recipe-schema-test/ . If the Google Photos image fails to load, replace it with a publicly hosted image in both HTML pages and the JSON-LD. Cooking times and servings were intentionally omitted because they were not provided. For safe pork cooking, verify 145°F internal temperature followed by at least a 3-minute rest.
+UPDATED COOKBOOK: Includes two recipes and four original OneNote photos.
+
+Upload index.html, styles.css, recipes/ and assets/ to the root of your existing GitHub repository, preserving folders. Commit changes to main.
+
+Note: OneNote date is not treated as publication date. Cooking times and servings are not inferred.
