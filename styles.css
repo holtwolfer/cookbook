@@ -20,3 +20,19 @@
 .chicken-panel:has(> h2:first-child) ul li {
   list-style: none;
 }
+
+
+/* Holt-Wolfer cookbook layout — managed by Recipe Editor v2 */
+.chicken-gallery{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 26px}
+.chicken-gallery img{max-width:min(100%,380px);max-height:320px;object-fit:contain}
+.chicken-panel{margin:18px 0;padding:24px;background:#fff;border-radius:10px}
+.chicken-panel h2{margin:0 0 14px}
+.chicken-panel:has(> h2:first-child) h3{margin:22px 0 8px}
+.chicken-panel:has(> h2:first-child) li{line-height:1.5}
+.chicken-panel:has(> h2:first-child) ol{padding-left:1.7em}
+.chicken-panel:has(> h2:first-child) ol li{margin-bottom:12px}
+.chicken-panel.recipe-ingredients ul{padding-left:0;list-style:none}
+.chicken-panel.recipe-ingredients ul li{list-style:none;margin-bottom:5px}
+.chicken-panel:has(> h2:first-child):has(> h2) {width:100%}
+/* Ingredient panels only, including older first-pass headings */
+.chicken-panel.recipe-ingredients ul li::marker{content:""}
