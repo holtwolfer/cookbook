@@ -46,7 +46,7 @@ function update(){
  const terms=normalize(search.value).split(/\s+/).filter(Boolean);let n=0;
  cards.forEach(c=>{
   const hay=normalize((c.dataset.keywords||'')+' '+(c.dataset.tags||'')+' '+(c.dataset.served||'')+' '+c.innerText);
-  const ok=(cat==='All'||c.dataset.category===cat)&&((cat!=='Pork'&&cat!=='Seafood'&&cat!=='Starches')||subcat==='All'||c.dataset.subcategory===subcat)&&terms.every(t=>termMatches(hay,t));
+  const ok=(cat==='All'||c.dataset.category===cat)&&((cat!=='Pork'&&cat!=='Seafood'&&cat!=='Starches'&&cat!=='Lamb & Goat'&&cat!=='Vegetables')||subcat==='All'||c.dataset.subcategory===subcat)&&terms.every(t=>termMatches(hay,t));
   c.hidden=!ok;if(ok)n++;
  });document.querySelector('#empty').hidden=n>0;
 }
