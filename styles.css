@@ -7,3 +7,16 @@
 .chicken-notes{white-space:pre-wrap;font:16px/1.65 Georgia,serif}.chicken-gallery{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.chicken-gallery img{max-width:min(100%,350px);max-height:340px;object-fit:contain;border-radius:8px}.tag-links{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 20px}.tag-chip{display:inline-block;padding:6px 12px;border-radius:999px;background:#ece9df;text-decoration:none;color:#324b37}.chicken-panel{margin:22px 0;padding:20px;background:#fff;border-radius:10px}.chicken-panel li{margin-bottom:8px}.chicken-review{border-left:4px solid #b97a3a;padding:12px 16px;background:#fff7e8}
 
 .subfilters{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 20px}.subfilters[hidden]{display:none}.subfilters button{padding:8px 14px;border:1px solid #8d978b;border-radius:20px;background:#f7f5ef;color:#324b37;cursor:pointer}.subfilters button.active{background:#324b37;color:white}.recipe-section-label{font-weight:bold;margin:12px 0 5px}
+
+/* Recipe ingredients: clean list without bullets */
+.chicken-panel:has(> h2:first-child) ul {
+  padding-left: 0;
+}
+
+.chicken-panel:has(> h2:first-child) li {
+  margin-bottom: 6px;
+}
+
+.chicken-panel:has(> h2:first-child) ul li {
+  list-style: none;
+}
