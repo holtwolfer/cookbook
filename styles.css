@@ -36,3 +36,16 @@
 .chicken-panel:has(> h2:first-child):has(> h2) {width:100%}
 /* Ingredient panels only, including older first-pass headings */
 .chicken-panel.recipe-ingredients ul li::marker{content:""}
+/* Holt-Wolfer Cookbook — Deep Dusty Blue background */
+body {
+    background-color: #68889E;
+}
+/* Coordinated blue links and buttons */
+a {
+    color: #294B63;
+}
+
+.filters button.active {
+    background-color: #294B63;
+    color: white;
+}
