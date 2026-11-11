@@ -181,3 +181,49 @@ a:hover { color: #173A53; }
 #empty[hidden] {
   display: none !important;
 }
+
+/* === HOLT-WOLFER CLASSIC FAMILY COOKBOOK — START === */
+:root{--dusty:#68889E;--navy:#294B63;--ink:#263b47;--ivory:#fffaf0;--paper:#fffdf8;--linen:#e7dac6;--gold:#bb9461}
+html{scroll-behavior:smooth}
+body{background:var(--dusty);color:var(--ink);font:17px/1.7 Georgia,"Times New Roman",serif}
+a{color:var(--navy);text-underline-offset:3px}
+header{background:var(--navy);color:#fff9ed;border-bottom:4px solid var(--gold);box-shadow:0 5px 18px #18364b24;padding:18px max(24px,calc((100vw - 1160px)/2));font:600 14px/1.5 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+main{max-width:1160px;margin:32px auto 70px;padding:clamp(24px,4vw,55px);background:var(--ivory);border:1px solid #e4d6bf;border-radius:5px;box-shadow:0 18px 50px #1a3d5270}
+.cookbook-intro{text-align:center;padding:28px 20px 30px;margin:-5px 0 27px;border-bottom:1px solid var(--linen);position:relative}
+.cookbook-intro:after{content:"✦";position:absolute;bottom:-15px;left:calc(50% - 19px);width:38px;background:var(--ivory);color:var(--gold);font-size:21px}
+.cookbook-intro .tag{color:#9b7548;font-size:12px;letter-spacing:.28em}
+.cookbook-intro h1{max-width:850px;margin:12px auto 14px;font:normal clamp(37px,5vw,66px)/1.12 Georgia,serif;letter-spacing:-.035em;color:var(--navy)}
+.cookbook-intro .intro{max-width:660px;margin:12px auto 0;color:#65717a;font:17px/1.7 Georgia,serif}
+#cookbook-menu-nav{display:flex;justify-content:center;margin:22px auto 12px!important;font:600 13px Arial,sans-serif!important}
+#cookbook-menu-nav a{display:inline-block;padding:12px 22px;background:var(--navy);color:white;text-decoration:none;border-radius:3px;letter-spacing:.07em;box-shadow:0 4px 10px #294b6326}
+#cookbook-menu-nav a:hover{background:#3b647d}
+.search{background:#fff;border:1px solid #d8cbb8;border-radius:4px;padding:16px 19px;margin:15px 0 23px;box-shadow:0 3px 12px #243b4c0a;color:var(--ink)}
+.search:focus{outline:2px solid var(--dusty);outline-offset:2px}
+.filters,.subfilters{gap:8px;justify-content:center}
+.filters{padding-bottom:23px;margin-bottom:24px;border-bottom:1px solid var(--linen)}
+.filters button,.subfilters button{background:#fffdf8;color:var(--navy);border:1px solid #c9d0d1;border-radius:3px;padding:10px 14px;font:600 12px/1.3 Arial,sans-serif;letter-spacing:.02em;transition:background .15s,transform .15s;cursor:pointer}
+.filters button:hover,.subfilters button:hover{background:#e9f0f3;transform:translateY(-1px)}
+.filters button.active,.subfilters button.active{background:var(--navy);border-color:var(--navy);color:white}
+.cookbook-section-heading{text-align:center;color:var(--navy);font:normal 29px Georgia,serif;margin:20px 0 26px}
+.cookbook-section-heading:after{content:"";display:block;width:75px;height:2px;background:var(--gold);margin:13px auto 0}
+.grid{grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:24px}
+.card{display:block;background:var(--paper);border:1px solid #e4dacb;border-radius:5px;overflow:hidden;box-shadow:0 4px 16px #253f5114;transition:transform .18s,box-shadow .18s;text-decoration:none;color:var(--ink)}
+.card:hover{transform:translateY(-4px);box-shadow:0 13px 25px #253f5129}
+.card img{display:block;width:100%;height:210px;aspect-ratio:4/3;object-fit:cover}
+.card .body,.card .card-body{padding:18px 19px 21px}
+.card h2{font:normal 23px/1.2 Georgia,serif;color:var(--navy);margin:4px 0 9px}
+.card p{color:#77766e;font:13px/1.5 Arial,sans-serif;margin:0}
+.panel,.chicken-panel{background:var(--paper);border:1px solid #e7dac8;border-radius:5px;box-shadow:0 4px 14px #253f5112;padding:clamp(20px,3vw,32px)}
+.panel h2,.chicken-panel h2{font:normal 29px Georgia,serif;color:var(--navy);padding-bottom:12px;border-bottom:1px solid var(--linen)}
+.panel h3,.chicken-panel h3{color:var(--navy)}
+.tag{color:#997346;letter-spacing:.13em}
+.tag-chip{background:#e8eff2;color:var(--navy);border:1px solid #d5e1e6;border-radius:3px}
+.tag-chip:hover,.tag-chip:focus{background:#d8e6ed}
+.hero,.gallery img,.chicken-gallery img{border-radius:4px}
+.back{color:var(--navy);font:600 14px Arial,sans-serif}
+.notice,.chicken-review{background:#fcf5e9;border-left:4px solid var(--gold)}
+/* Essential: filtering uses the HTML hidden attribute. */
+[hidden],.card[hidden],.subfilters[hidden],#empty[hidden]{display:none!important}
+@media(max-width:760px){main{margin:0;padding:24px 16px 44px;border-radius:0}.cookbook-intro{padding:12px 2px 24px}.grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px}.card img{height:180px}.recipe,.recipe-layout{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.card,.filters button,.subfilters button{transition:none}}
+/* === HOLT-WOLFER CLASSIC FAMILY COOKBOOK — END === */
