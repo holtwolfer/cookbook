@@ -1,0 +1,176 @@
+/* Original Holt-Wolfer Cookbook rules retained for editor compatibility */
+*{box-sizing:border-box}body{margin:0;background:#f6f3ed;color:#302b26;font:18px/1.6 Georgia,serif}header{background:#fff;border-bottom:1px solid #ddd5c8;padding:20px max(20px,calc((100vw - 1050px)/2));font:700 18px Arial,sans-serif}a{color:#53633d}main{max-width:1050px;margin:auto;padding:36px 20px}h1{font-size:clamp(34px,5vw,56px);line-height:1.15;margin:10px 0}h2{font-size:27px}.intro{color:#686054}.search{width:100%;padding:15px;border:1px solid #bcb4a5;border-radius:9px;font:18px Arial;margin:18px 0}.filters{display:flex;gap:10px;margin:0 0 25px}.filters button{padding:11px 18px;border:1px solid #bcb4a5;border-radius:25px;background:white;cursor:pointer}.filters button.active{background:#53633d;color:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}.card,.panel{background:white;border:1px solid #e2dbd0;border-radius:14px;overflow:hidden}.card{text-decoration:none;color:inherit}.card img{width:100%;aspect-ratio:4/3;object-fit:cover}.card .body{padding:20px}.tag{color:#53633d;text-transform:uppercase;font:700 12px Arial;letter-spacing:1px}.card h2{margin:8px 0}.recipe{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}.hero{width:100%;max-height:430px;object-fit:cover;border-radius:12px}.panel{padding:22px;margin-top:20px}.panel li{margin:0 0 12px}.back{display:inline-block;margin-bottom:20px}.muted{color:#686054}@media(max-width:750px){.recipe{grid-template-columns:1fr}}
+.recipe-layout{display:grid;grid-template-columns:minmax(220px,1fr) minmax(0,2fr);gap:24px}.panel{padding:24px}.panel li{margin:0 0 10px}.gallery{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.gallery img{max-width:min(100%,320px);max-height:280px;object-fit:cover;border-radius:9px}.notice{border-left:4px solid #a66b2a;padding:12px 18px;background:#fff8e9}.source-details{margin-top:25px}.source-details pre{white-space:pre-wrap;font:15px/1.5 Georgia,serif}.card img{width:100%;height:185px;object-fit:cover}.filters{flex-wrap:wrap}@media(max-width:700px){.recipe-layout{grid-template-columns:1fr}}
+/* Clickable original OneNote tags */
+.tag-links{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 1rem}.tag-chip{display:inline-block;padding:.35rem .75rem;border-radius:100px;background:#e9efe7;color:#244d35;text-decoration:none;font-size:.92rem}.tag-chip:hover,.tag-chip:focus{background:#d2e4cf;text-decoration:underline}.metadata-panel ul{padding-left:1.4rem}
+.chicken-notes{white-space:pre-wrap;font:16px/1.65 Georgia,serif}.chicken-gallery{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.chicken-gallery img{max-width:min(100%,350px);max-height:340px;object-fit:contain;border-radius:8px}.tag-links{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 20px}.tag-chip{display:inline-block;padding:6px 12px;border-radius:999px;background:#ece9df;text-decoration:none;color:#324b37}.chicken-panel{margin:22px 0;padding:20px;background:#fff;border-radius:10px}.chicken-panel li{margin-bottom:8px}.chicken-review{border-left:4px solid #b97a3a;padding:12px 16px;background:#fff7e8}
+.subfilters{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 20px}.subfilters[hidden]{display:none}.subfilters button{padding:8px 14px;border:1px solid #8d978b;border-radius:20px;background:#f7f5ef;color:#324b37;cursor:pointer}.subfilters button.active{background:#324b37;color:white}.recipe-section-label{font-weight:bold;margin:12px 0 5px}
+/* Recipe ingredients: clean list without bullets */
+.chicken-panel:has(> h2:first-child) ul{padding-left:0}.chicken-panel:has(> h2:first-child) li{margin-bottom:6px}.chicken-panel:has(> h2:first-child) ul li{list-style:none}
+/* Holt-Wolfer cookbook layout — managed by Recipe Editor v2 */
+.chicken-gallery{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 26px}.chicken-gallery img{max-width:min(100%,380px);max-height:320px;object-fit:contain}.chicken-panel{margin:18px 0;padding:24px;background:#fff;border-radius:10px}.chicken-panel h2{margin:0 0 14px}.chicken-panel:has(> h2:first-child) h3{margin:22px 0 8px}.chicken-panel:has(> h2:first-child) li{line-height:1.5}.chicken-panel:has(> h2:first-child) ol{padding-left:1.7em}.chicken-panel:has(> h2:first-child) ol li{margin-bottom:12px}.chicken-panel.recipe-ingredients ul{padding-left:0;list-style:none}.chicken-panel.recipe-ingredients ul li{list-style:none;margin-bottom:5px}.chicken-panel:has(> h2:first-child):has(> h2){width:100%}.chicken-panel.recipe-ingredients ul li::marker{content:""}
+/* Current blue customizations */
+body{background-color:#68889E}a{color:#294B63}.filters button.active{background-color:#294B63;color:white}
+
+/* =============================================================
+   Classic Family Cookbook redesign — shared across all pages
+   ============================================================= */
+/* ============================================================
+   HOLT-WOLFER FAMILY COOKBOOK | Classic Family Cookbook Theme
+   Add after styles.css. Designed for existing cookbook markup.
+   Palette: Deep Dusty Blue #68889E, ivory #FFFCF6, navy #294B63
+   ============================================================ */
+:root {
+  --cookbook-blue: #68889E;
+  --cookbook-navy: #294B63;
+  --cookbook-ink: #263848;
+  --cookbook-ivory: #FFFCF6;
+  --cookbook-paper: #F6F0E5;
+  --cookbook-border: #E4D9C8;
+  --cookbook-muted: #586777;
+  --cookbook-shadow: 0 12px 32px rgba(24,46,63,.13);
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--cookbook-blue);
+  color: var(--cookbook-ink);
+  font: 18px/1.7 Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+}
+/* Navigation band; preserves existing links and structure */
+body > header {
+  background: var(--cookbook-navy);
+  color: var(--cookbook-ivory);
+  border-bottom: 3px solid #C9B99C;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  box-shadow: 0 3px 12px rgba(21,44,62,.13);
+  font: 600 18px/1.4 Georgia, 'Times New Roman', serif;
+  letter-spacing: .045em;
+}
+body > header a { color: var(--cookbook-ivory); text-decoration-color: #d9c8ac; }
+body > header a:hover { color: #F4DFC0; }
+body > main { max-width: 1120px; padding-top: 45px; padding-bottom: 80px; }
+body > main > h1 {
+  color: #fffdf8;
+  font-size: clamp(38px, 5.6vw, 68px);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+  text-shadow: 0 2px 12px rgba(28,52,70,.16);
+}
+/* Introductory text and labels over the blue background */
+body > main > .tag {
+  color: #fff4e2;
+  font: 700 12px/1.5 Arial, sans-serif;
+  letter-spacing: .21em;
+}
+body > main > .intro { color: #fff9ef; max-width: 750px; font-size: 19px; }
+/* Recipe pages: main title and breadcrumb are directly on blue */
+body > main > p:first-child { color: #fffaf1; }
+body > main > p:first-child a { color: #fffaf1; text-decoration-color: #d4e1e8; }
+body > main > p:first-child a:hover { color: white; }
+/* Search: a light, editorial search field */
+.search {
+  background: var(--cookbook-ivory);
+  border: 1px solid var(--cookbook-border);
+  border-radius: 13px;
+  padding: 17px 20px;
+  color: var(--cookbook-ink);
+  box-shadow: 0 8px 22px rgba(28,49,66,.12);
+  font: 16px/1.5 Arial, sans-serif;
+  outline-offset: 3px;
+}
+.search::placeholder { color: #79818a; }
+.search:focus { outline: 3px solid #e4d3b8; }
+/* Category and subcategory filters */
+.filters, .subfilters { gap: 9px; }
+.filters button, .subfilters button {
+  border: 1px solid rgba(255,255,255,.6);
+  background: #F7F1E7;
+  color: var(--cookbook-navy);
+  border-radius: 999px;
+  padding: 10px 17px;
+  font: 600 13px/1.35 Arial, sans-serif;
+  transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+.filters button:hover, .subfilters button:hover {
+  background: #fffdf9;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 9px rgba(28,49,66,.13);
+}
+.filters button.active, .subfilters button.active {
+  background: var(--cookbook-navy);
+  border-color: var(--cookbook-navy);
+  color: white;
+}
+/* Homepage recipe tiles; support both legacy .body and .card-body */
+.grid { gap: 25px; }
+a.card, .card, .panel, .chicken-panel {
+  background: var(--cookbook-ivory);
+  border: 1px solid var(--cookbook-border);
+  border-radius: 14px;
+  box-shadow: var(--cookbook-shadow);
+}
+a.card {
+  display: block;
+  overflow: hidden;
+  color: var(--cookbook-ink);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+a.card:hover, a.card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 17px 36px rgba(22,44,60,.22);
+}
+a.card img { display: block; width: 100%; height: 205px; object-fit: cover; }
+a.card .body, a.card .card-body { padding: 20px 22px 22px; }
+a.card h2 { font: 600 clamp(21px,2vw,26px)/1.25 Georgia,serif; letter-spacing: -.018em; margin: 3px 0 8px; }
+a.card p { color: var(--cookbook-muted); font: 13px/1.5 Arial,sans-serif; margin: 0; }
+a.card .no-photo { min-height: 155px; display: grid; place-items: center; background: #E7E3D9; color: var(--cookbook-navy); font: 700 14px Arial,sans-serif; letter-spacing: .06em; }
+/* Recipe detail panels and typography */
+.panel, .chicken-panel { padding: clamp(20px,3vw,32px); margin-top: 22px; }
+.panel h2, .chicken-panel h2 {
+  color: var(--cookbook-navy);
+  font: 600 clamp(25px,3vw,32px)/1.2 Georgia,serif;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--cookbook-border);
+}
+.chicken-panel h3 { color: var(--cookbook-navy); }
+.chicken-panel li, .panel li { line-height: 1.65; }
+.chicken-gallery { gap: 17px; }
+.chicken-gallery img, .gallery img, .hero {
+  border-radius: 12px;
+  border: 4px solid var(--cookbook-ivory);
+  box-shadow: 0 8px 22px rgba(26,48,66,.2);
+}
+/* Links and metadata */
+a { color: var(--cookbook-navy); text-underline-offset: 3px; }
+a:hover { color: #173A53; }
+.tag-links { gap: 9px; }
+.tag-chip {
+  background: #E4EAF0;
+  border: 1px solid #D0DDE5;
+  color: var(--cookbook-navy);
+  border-radius: 999px;
+  padding: 6px 13px;
+  font: 600 13px/1.4 Arial,sans-serif;
+}
+.tag-chip:hover, .tag-chip:focus { background: #D3E1EA; color: #173A53; }
+.muted { color: var(--cookbook-muted); }
+.notice, .chicken-review { background: #FFF5E5; border-left-color: #B18A55; border-radius: 0 9px 9px 0; }
+.source-details, details { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid #e0bc7c; outline-offset: 3px; }
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  body > main { padding: 28px 15px 55px; }
+  body > header { padding: 17px 18px; }
+  .grid { gap: 17px; }
+  .filters button, .subfilters button { padding: 9px 13px; }
+  .panel, .chicken-panel { padding: 20px; }
+  a.card img { height: 180px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  a.card, .filters button, .subfilters button { transition: none; }
+}

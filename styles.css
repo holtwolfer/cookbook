@@ -174,3 +174,10 @@ a:hover { color: #173A53; }
   html { scroll-behavior: auto; }
   a.card, .filters button, .subfilters button { transition: none; }
 }
+
+/* Filtering compatibility: hidden cards must remain hidden despite display:block */
+.card[hidden],
+.subfilters[hidden],
+#empty[hidden] {
+  display: none !important;
+}
