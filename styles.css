@@ -249,4 +249,12 @@ body:has(.recipe-layout) main h1 {
     letter-spacing: -0.02em !important;
     text-shadow: none !important;
     margin: 12px 0 22px !important;
+}/* Readable page titles on recipe and menu pages */
+body:has(main > h1) main > h1 {
+    color: #294B63 !important;
+    font-size: clamp(32px, 3.5vw, 48px) !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    text-shadow: none !important;
+    margin: 12px 0 24px !important;
 }
